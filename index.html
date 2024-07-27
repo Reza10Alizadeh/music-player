@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eec696899d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="player">
+        <img id="cover" class="cover" src="" alt="Cover Image">
+        <div class="info">
+            <h2 id="track-name">Track Name</h2>
+            <p id="artist-name">Artist Name</p>
+        </div>
+        <audio id="audio"></audio>
+        <div class="controls">
+            <button id="shuffle" class="control-button"><i class="fas fa-random"></i></button>
+            <button id="repeat" class="control-button"><i class="fas fa-repeat"></i></button>
+            <button id="prev" class="control-button"><i class="fas fa-backward"></i></button>
+            <button id="play-pause" class="control-button"><i class="fas fa-play"></i></button>
+            <button id="next" class="control-button"><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="progress">
+            <input type="range" id="progress" value="0" min="0" max="100">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
